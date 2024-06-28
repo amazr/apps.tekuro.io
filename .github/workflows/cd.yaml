@@ -31,7 +31,7 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-      - name: Update values.yaml
+      - name: Update deployment.yaml
         run: |
           cd deployment
           sed -i 's|image: ${{ env.IMAGE_NAME }}:.*|image: ${{ env.IMAGE_NAME }}:${{ github.sha }}|' deployment.yaml

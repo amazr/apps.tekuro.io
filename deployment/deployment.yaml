@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apps
+      app: nginx 
   template:
     metadata:
       labels:
-        app: apps
+        app: nginx 
     spec:
       containers:
       - name: apps
