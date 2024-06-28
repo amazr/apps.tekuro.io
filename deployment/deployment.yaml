@@ -17,3 +17,5 @@ spec:
         image: artifacts.tekuro.io/apps:26171e33cd1c5ab3e4db0d932b1f3bc3a520e6ff
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+        - name: regcred
