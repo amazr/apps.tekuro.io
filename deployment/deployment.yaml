@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: apps
-        image: artifacts.tekuro.io/apps:45eb0729db09d4501390096b621001e3a47d0457
+        image: artifacts.tekuro.io/apps:113eb05c5f8a1b78b59e8f2f2b8233309031ea4f
         ports:
         - containerPort: 8080
       imagePullSecrets:
