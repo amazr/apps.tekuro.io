@@ -21,6 +21,7 @@ jobs:
       - name: Login to Tekuro Artifacts
         uses: docker/login-action@v1
         with:
+          registry: artifacts.tekuro.io
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ env.DOCKER_PASSWORD }}
 
